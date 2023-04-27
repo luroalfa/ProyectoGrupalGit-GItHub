@@ -1,0 +1,185 @@
+/* Estilos Css para página participantes del proyecto Programadores Unidos
+
+
+
+Última Actualización: 11/02/2022
+
+
+*/
+
+ /*Estilos desde 0*/
+*{
+  margin: 0;
+  padding:0;
+  box-sizing: border-box;
+}
+
+/* variables */
+:root {
+  --colorBackground: #1c1f2a;
+  --colorTexto: rgb(235, 235, 235);
+  --colorBoton: #c99700;
+  --colorTextoRepitar: #cfdb61;
+  --tipografiaGeneral: "Roboto", sans-serif;
+}
+
+/*Estilos del body*/
+body {
+  background-color: var(--colorBackground);
+  color: var(--colorTexto);
+}
+
+/*Estilos del header*/
+.participantes__header{
+	height: 75vh;
+    width: 100%;
+    background-image: url("../assets/img/utilidades/participants.jpg");
+    margin-bottom:150px;
+
+}
+
+/*Estilos del título*/
+.participantes__titulo{
+	
+	display: inline-flex;
+	margin-top: 18%;
+	margin-left: 34%;
+	position: relative;
+	font-size: 5em;
+
+}
+/*Estilos del parrafo que acompaña el título*/
+header p{
+	margin: auto;
+	text-align: center;
+	display: inline-flex;
+	font-size: 1.6em;
+	margin-left: 15%;
+	margin-top: 23%;
+}
+
+
+/*Estilos del subcontenedor*/
+.subcontainer__participante {
+  width: 100%;
+}
+
+/*Estilos de las imagenes de cada participante*/
+.imagen__participante{
+	width: 150px;
+	height:150px;
+	margin-bottom: 20px;
+}
+
+
+/*Estilos de los botones*/
+.portafolio_boton {
+  cursor: pointer;
+  padding: 5px;
+  font-weight: 400;
+  font-size: 20px;
+  color: white;
+  background-color: var(--colorBoton);
+  border-radius: 6px;
+  border: solid 1px white;
+  width: 250px;
+  margin:15px;
+}
+
+.portafolio_boton:hover {
+  background-color: var(--colorBackground);
+}
+
+
+/*Estilos del footer*/
+
+.footer__participantes{
+  background-color: #232323;
+  height: 20vh;
+  margin: auto;
+  text-align: center;
+  
+   
+}
+
+.footer__participantes a {
+	
+	color: var(--colorBoton);
+	margin-top: 50px;
+	display: inline-block;
+	font-size: 1.2em;
+
+}
+
+.footer__participantes a:hover{
+	color: #fff;
+}
+
+/*Contenido adaptable para dispositivos menos de 800px*/
+
+@media only screen and (max-width: 800px){
+
+	.participantes__header{
+		height: 40vh;
+    	width: 100%;
+    	background-image: url("participants_responsive.jpg");
+    	margin-bottom:100px;
+
+    	
+	}
+	.participantes__titulo{
+	
+	display: inline-flex;
+	margin-top: 20%;
+	margin-left: 24%;
+	position: relative;
+	font-size: 4.5em;
+
+	}
+	header p{
+	margin: auto;
+	text-align: center;
+	display: inline-flex;
+	font-size: 1.2em;
+	margin-left: 1.5%;
+	margin-top: 15%;
+	}
+
+	.participantes__contenedor{
+	margin: auto;
+	text-align: center;
+    display: grid;
+  	grid-template-columns: repeat(1, 1fr);
+	}
+
+	.imagen__participante{
+	width: 150px;
+	height:150px;
+	margin-bottom: 10px;
+	}
+}
+
+article{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+article p {
+	font-size: 1.2em;
+}
+
+article span{
+	color: var(--colorTextoRepitar);
+}
+
+.container__participants{
+	text-align: initial;
+}
+
+.container_articles{
+	display: flex;
+	gap: 20px;
+	flex-wrap: wrap;
+	justify-content: center;
+}
